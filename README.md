@@ -6,7 +6,7 @@ Trabajo Práctico Integrador · Programación 4 · Tecnicatura Universitaria en 
 
 | | |
 |---|---|
-| Repositorio | `PENDIENTE: URL del repositorio público de GitHub` |
+| Repositorio | <https://github.com/brujoh88/foodstore-tpi-prog4> |
 | Video de demostración | `PENDIENTE: link público al video` |
 
 Aplicación web para un negocio de comidas. Los clientes se registran, recorren el catálogo, arman un
