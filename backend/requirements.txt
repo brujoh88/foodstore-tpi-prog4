@@ -1,0 +1,14 @@
+# Versiones fijadas. Python 3.11 a 3.13.
+fastapi[standard]==0.163.2
+uvicorn==0.54.0
+sqlmodel==0.0.50
+SQLAlchemy==2.1.9
+pydantic==2.14.3
+pydantic-settings==2.16.3
+email-validator==2.4.0
+psycopg2-binary==2.9.13
+python-jose[cryptography]==3.5.0
+# Passlib 1.7.4 falla con bcrypt 5: se fijan las dos.
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-multipart==0.0.20

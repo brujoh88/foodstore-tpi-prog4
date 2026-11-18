@@ -1,0 +1,17 @@
+# PostgreSQL para desarrollo. Opcional: si ya hay un PostgreSQL instalado, alcanza
+# con apuntar DATABASE_URL a esa base.
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: foodstore-tpi-db
+    environment:
+      POSTGRES_USER: foodstore
+      POSTGRES_PASSWORD: foodstore
+      POSTGRES_DB: foodstore_db
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - foodstore_data:/var/lib/postgresql/data
+
+volumes:
+  foodstore_data:
