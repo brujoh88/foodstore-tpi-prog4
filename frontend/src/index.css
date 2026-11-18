@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Clases con nombre para lo que se repite: cambiar un color se hace una sola vez, acá. */
+@layer components {
+  .campo {
+    @apply w-full rounded-lg border border-stone-300 bg-white px-3 py-2 text-base text-stone-900 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 focus:outline-none disabled:bg-stone-100;
+  }
+  .campo-invalido {
+    @apply border-red-400 focus:border-red-500 focus:ring-red-200;
+  }
+  .enlace {
+    @apply font-semibold text-orange-600 hover:underline;
+  }
+  .titulo-pagina {
+    @apply text-2xl font-bold text-stone-900;
+  }
+  .alerta-error {
+    @apply rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700;
+  }
+  .alerta-ok {
+    @apply rounded-lg bg-green-50 px-4 py-3 text-sm text-green-800;
+  }
+  .tabla th {
+    @apply px-4 py-3 text-left font-semibold whitespace-nowrap;
+  }
+  .tabla td {
+    @apply px-4 py-3 align-middle;
+  }
+}
